@@ -18,23 +18,23 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar__color">
             <div class="container-fluid">
-              <a class="navbar-brand navbar__font" href="../../index.html">StudySelf</a>
+              <a class="navbar-brand navbar__title" href="../../index.html">StudySelf</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./assets/pages/nosotros.html">Nosotros</a>
+                    <a class="nav-link active highlight" id="navbar__link" aria-current="page" href="./assets/pages/nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./assets/pages/recursos.html">Recursos</a>
+                    <a class="nav-link active highlight" id="navbar__link" aria-current="page" href="./assets/pages/recursos.html">Recursos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./assets/pages/plantillas.html">Plantillas</a>
+                    <a class="nav-link active highlight" id="navbar__link" aria-current="page" href="./assets/pages/plantillas.html">Plantillas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./assets/pages/contacto.html">Contacto</a>
+                    <a class="nav-link active highlight"  id="navbar__link" aria-current="page" href="./assets/pages/contacto.html">Contacto</a>
                   </li>
                 </ul>
 
@@ -44,50 +44,46 @@
     </header>
 
     <section class="container-fluid ">
-    <div class="row box__slogan">
+    <div class="row slogan__box">
         <div class="col-lg-6 col-md-6 col-sm-12">
             <img src="./assets/images/index_main.png" class="img-fluid">
         </div>
-        <div class="col-lg-6 slogan">
-            <p>Estudia sin límites</p>
+        <div class="col-lg-6 slogan__display">
+            <div class="slogan__font">Estudia sin límites</div>
         </div>
     </div>
-    <div class="row mt-5">
+    <div class="row">
       <div class="col-lg-12">
-        <figure class="text-center">
-          <blockquote class="blockquote">
-            <p>Bienvenido a StudySelf</p>
-          </blockquote>
-          <figcaption class="blockquote-footer">
-            Esta página web te ayudará a estudiar lo que te propongas y a cumplir tus metas
-          </figcaption>
-        </figure>
+            <p class="bienvenido">Bienvenido a <a  class="highlight bienvenido__link" href="./assets/pages/nosotros.html">   StudySelf</a></p>
+            <p class="bienvenido__texto">Esta página web te ayudará a estudiar lo que te propongas y a cumplir tus metas</p>
       </div>
     </div>
     </section>
+
+
     <section class="container-fluid mt-5">
-    <div class="row cards">
-      <div class="card" style="width: 18rem;">
+    <div class="row cards__box">
+      <div class="card card-unit" style="width: 18rem;">
         <img src="./assets/images/Resumen.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Cómo hacer resúmenes</h5>
-          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi </p>
+        <div class="card-body ">
+          <h5 class="card-title ">Cómo hacer resúmenes</h5>
+          <p class="card-text card__text">Esta guía paso a paso te ayudará a armar resúmenes de cualquier tipo. </p>
           <a href="#" class="btn btn-primary boton_card">Ir al sitio</a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card card-unit" style="width: 18rem;">
         <img src="./assets/images/Estudio.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Métodos de Estudio</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione neque quia, soluta eius sunt </p>
+          <p class="card-text card__text">¿Necesitas ayuda para estudiar? Nosotros tenemos la solución.</p>
           <a href="#" class="btn btn-primary boton_card">Ir al sitio</a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card card-unit" style="width: 18rem;">
         <img src="./assets/images/Libros.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Recomendaciones de libros</h5>
-          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, esse quod, nostrum</p>
+          <p class="card-text card__text">Si no sabés que leer, acá tenes una lista de libros imprescindibles.</p>
           <a href="#" class="btn btn-primary boton_card">Ir al sitio</a>
         </div>
       </div>

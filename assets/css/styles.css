@@ -12,34 +12,63 @@
     src: url(../fonts/Lora-VariableFont_wght.ttf);
 }
 
-.navbar__font{
+@font-face {
+    font-family: "Bebas";
+    src: url(../fonts/BebasNeue-Regular\ copy.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+.navbar__title{
     font-family: 'Abril Fatface', cursive;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: rgb(68, 67, 66);
 }
 
-.box__slogan{
-    background-image: linear-gradient(to right,gray,white);
+/* INDEX */
+
+.slogan__display{
+    display: none;
 }
 
-.slogan{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: "Lora";
-    font-size: 4rem;
+.bienvenido{
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(68, 67, 66);
 }
 
-
-.back{
-    background-color: aqua;
+.bienvenido__texto{
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 12px;
 }
 
-.cards{
+.bienvenido__link{
+    font-family: "Montserrat";
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(68, 67, 66);
+}
+.cards__box{
+
     display: flex;
     justify-content: space-evenly;
 }
+.card-unit{
+    margin-top: 10px;
+    text-align: center;
+    width: 290px;
+}
 
+
+
+.card__text{
+    font-family: "Montserrat";
+}
 .boton_card{
     box-decoration-break: none;
     background-color: rgb(69, 69, 69);
@@ -68,6 +97,77 @@
     align-items:flex-start;
 }
 
+/* NOSOTROS */
+
+.nosotros__descripcion{
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 13px;
+    background-color: rgba(240, 240, 240, 0.985);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nosotros__descripcion--titulo{
+    text-align: center;
+    font-family: "Bebas";
+    font-size: 30px;
+    margin-top: 20px;
+}
+.nosotros__descripcion--texto{
+    font-family: "Montserrat";
+    padding: 20px;
+}
+.nosotros__frase{
+        display: flex;
+        align-items:center;
+}
+.nosotros__frase--texto{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.nosotros__frase--deco{
+    background-color: rgb(68, 67, 66);
+    height: 3px;
+}
+
+.nosotros__como--titulo{
+    font-family: "Bebas";
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.nosotros__como{
+    background-color: rgba(240, 240, 240, 0.985);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px){
+
+    .slogan__display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Bebas";
+        font-size: 3rem;
+        width: 20px;
+    }
+
+.slogan__box{
+    background-image: linear-gradient(to right,gray,white);
+}
+
 .carousel__color{
     color: rgb(57, 55, 55);
     font-family: "Mukta";
@@ -81,3 +181,53 @@
     font-size: 20px;
 
 }
+
+.slogan__font{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    width: 300px;
+  }
+  
+  .slogan__font{
+    background:
+      linear-gradient(
+        to right,
+        rgb(90, 94, 94),
+        rgb(127, 127, 127)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+
+  }
+  
+  .slogan__font:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+  
+  .highlight{
+    box-shadow: inset 0 0 0 0 rgb(238, 238, 23);
+    padding-left: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+  .highlight:hover{
+          box-shadow: inset 200px 0 0 0 rgb(238, 238, 23);;
+  }
+  #navbar__link{
+      margin-left: 40px;
+      color: #080808;
+  }
+
+  
+}
+
