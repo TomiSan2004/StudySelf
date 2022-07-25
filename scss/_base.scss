@@ -1,0 +1,35 @@
+/* APLICA PARA TODOS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TIPOGRAFÍAS */
+@font-face{
+    font-family: "Mukta";
+    src: url(../assets/fonts/Mukta-Medium.ttf);
+}
+@font-face {
+    font-family: "Lora";
+    src: url(../ASSETS/fonts/Lora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url(../assets/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Abril";
+    src: url(../assets/fonts/AbrilFatface-Regular.ttf);
+}
+
+.row{
+    margin: 0cm;
+    padding: 0cm;
+}

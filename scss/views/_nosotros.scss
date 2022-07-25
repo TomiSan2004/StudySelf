@@ -1,0 +1,80 @@
+.nosotros{
+    display: flex;
+    flex-direction: column;
+}
+
+.descripcion{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: rgb(77,82,96);
+    background: linear-gradient(59deg, rgba(77,82,96,1) 0%, rgba(149,144,143,1) 13%, rgba(171,151,147,1) 36%, rgba(221,200,196,1) 55%, rgba(223,223,223,1) 99%);
+
+    
+    &__titulo{
+        text-align: center;
+        font-family: "Bebas";
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    &__texto{
+        font-family: "Montserrat";
+        padding: 20px;
+        font-size: 13px;
+    }
+}
+
+
+.frase{
+        display: grid;
+        grid-template-columns: 2fr 6fr 2fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-template-areas: 
+        "deco_iz texto deco_der";
+        align-items: center;
+
+
+        &__texto{
+            text-align:center;
+            font-family: "Montserrat";
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            grid-area: texto;
+        }
+        &__deco{
+            background-color: rgb(68, 67, 66);
+            height: 3px;
+            color: white;
+               
+            &--iz{
+                grid-area: deco_iz;
+            }
+            &--der{
+                grid-area: deco_der;
+            }
+        }
+}
+
+
+
+.como{
+    background-color: $gray;
+    display: flex;
+    justify-content: center;
+
+    &__titulo{
+    font-family: "Bebas";
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    }
+    &__card{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

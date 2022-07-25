@@ -1,0 +1,24 @@
+
+.cards__box{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-unit{
+    margin-top: 10px;
+    text-align: center;
+    width: 290px;
+}
+
+
+
+.card__text{
+    font-family: "Montserrat";
+}
+.boton_card{
+    box-decoration-break: none;
+    background-color: rgb(69, 69, 69);
+    font-family: "Mukta";
+    
+}
+

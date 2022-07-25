@@ -1,0 +1,58 @@
+
+.footer {
+    background: rgb(77,82,96);
+    background: linear-gradient(342deg, rgba(77,82,96,1) 0%, rgba(127,127,131,1) 12%, rgba(149,144,143,1) 25%, rgba(171,151,147,1) 50%, rgba(221,200,196,1) 76%, rgba(223,223,223,1) 99%);
+    margin-top: 40px;
+    border-top: 4px solid $gray;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-template-areas: 
+    "name"
+    "links"
+    "social"
+    "copy";
+
+    
+    &__name{
+        font-family: "Abril";
+        font-size: 2rem;
+        color: rgb(68, 67, 66);
+        grid-area: name;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: links;
+
+        a{
+            text-decoration: none;
+            font-family: "Montserrat";
+            color: $darkgray;
+            font-size: 15px;
+            text-transform: uppercase;
+            margin: 5px;
+        }
+    }
+    &__social{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            grid-area: social;
+        }
+    }
+    &__copyright{
+        grid-area: copy;
+        text-align: center;
+    }
+}
+
