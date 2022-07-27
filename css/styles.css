@@ -31,11 +31,11 @@
   margin: 0cm;
   padding: 0cm; }
 
-.cards__box {
+.card__box {
   display: flex;
   justify-content: space-evenly; }
 
-.card-unit {
+.card__unit {
   margin-top: 10px;
   text-align: center;
   width: 290px; }
@@ -43,10 +43,11 @@
 .card__text {
   font-family: "Montserrat"; }
 
-.boton_card {
+.card__boton {
   box-decoration-break: none;
   background-color: #454545;
-  font-family: "Mukta"; }
+  font-family: "Mukta";
+  border: 0cm; }
 
 .footer {
   background: #4d5260;
@@ -172,6 +173,19 @@
     margin-left: 20px;
     margin-right: 20px; }
 
+.carousel__index {
+  z-index: 2; }
+
+.carousel__color {
+  color: #393737;
+  font-family: "Mukta";
+  font-size: 40px; }
+
+.carousel__texto {
+  color: #393737;
+  font-family: "Mukta";
+  font-size: 20px; }
+
 /* CELULARES */
 @media screen and (max-width: 300px) {
   /* NOSOTROS */
@@ -231,14 +245,6 @@
   .slogan__box {
     background: #4d5260;
     background: linear-gradient(59deg, #4d5260 0%, #95908f 13%, #ab9793 36%, #ddc8c4 55%, #dfdfdf 99%); }
-  .carousel__color {
-    color: #393737;
-    font-family: "Mukta";
-    font-size: 40px; }
-  .carousel__texto {
-    color: #393737;
-    font-family: "Mukta";
-    font-size: 20px; }
   .slogan__font {
     color: inherit;
     text-decoration: none;
@@ -257,8 +263,8 @@
     padding-left: 0 .25rem;
     margin: 0 -.25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out; }
-  .highlight:hover {
-    box-shadow: inset 200px 0 0 0 #eeee17; }
+    .highlight:hover {
+      box-shadow: inset 200px 0 0 0 #eeee17; }
   #navbar__link {
     margin-left: 40px;
     color: #080808; } }

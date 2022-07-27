@@ -1,0 +1,15 @@
+.carousel{
+    &__index{
+        z-index: 2;
+    }
+    &__color{
+    color: rgb(57, 55, 55);
+    font-family: "Mukta";
+    font-size: 40px;
+    }
+    &__texto{
+    color: rgb(57, 55, 55);
+    font-family: "Mukta";
+    font-size: 20px;
+    }
+}

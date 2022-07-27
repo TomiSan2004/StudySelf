@@ -73,49 +73,36 @@
     }
 
 
-    .slogan__display{
+    .slogan{
+        &__display{
         display: flex;
         flex-direction: column;
         justify-content: center;
         font-family: "Bebas";
         font-size: 3rem;
         width: 20px;
+        }
+        &__box{
+            background: rgb(77,82,96);
+            background: linear-gradient(59deg, rgba(77,82,96,1) 0%, rgba(149,144,143,1) 13%, rgba(171,151,147,1) 36%, rgba(221,200,196,1) 55%, rgba(223,223,223,1) 99%);
+        }
     }
 
-.slogan__box{
-    background: rgb(77,82,96);
-    background: linear-gradient(59deg, rgba(77,82,96,1) 0%, rgba(149,144,143,1) 13%, rgba(171,151,147,1) 36%, rgba(221,200,196,1) 55%, rgba(223,223,223,1) 99%);
-}
-
-.carousel__color{
-    color: rgb(57, 55, 55);
-    font-family: "Mukta";
-    font-size: 40px;
-
-}
-
-.carousel__texto{
-    color: rgb(57, 55, 55);
-    font-family: "Mukta";
-    font-size: 20px;
-
-}
-
-.slogan__font{
+.slogan{
+    &__font{
     color: inherit;
     text-decoration: none;
     display: inline-block;
     width: 300px;
-  }
-  
-  .slogan__font{
+    }
+    &__font{
     background:
-      linear-gradient(
-        to right,
+    linear-gradient(
+    to right,
         rgb(90, 94, 94),
         rgb(127, 127, 127)
       ),
-      linear-gradient(
+    linear-gradient(
         to right,
         rgba(255, 0, 0, 1),
         rgba(255, 0, 180, 1),
@@ -125,23 +112,22 @@
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
-
-  }
-  
-  .slogan__font:hover {
+    }
+     &__font:hover {
     background-size: 0 3px, 100% 3px;
-  }
-  
+    }
+}
   .highlight{
     box-shadow: inset 0 0 0 0 rgb(238, 238, 23);
     padding-left: 0 .25rem;
     margin: 0 -.25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    &:hover{
+        box-shadow: inset 200px 0 0 0 rgb(238, 238, 23);;
+    }  
   }
 
-  .highlight:hover{
-          box-shadow: inset 200px 0 0 0 rgb(238, 238, 23);;
-  }
+
   #navbar__link{
       margin-left: 40px;
       color: #080808;
