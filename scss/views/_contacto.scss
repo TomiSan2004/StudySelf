@@ -3,17 +3,55 @@
         margin: 30px;
         padding: 30px;
         background-image: url(../../assets/images/img_contacto.png);
-   
         background-size: cover;
     }
     &__sub{
         font-family: "Bebas";
-        font-size: 45px;
-        opacity: 0.2;
+        font-size: 70px;
+        opacity: 0.9;
+        color: aliceblue;
     }
     &__text{
         font-family: "Montserrat";
-        font-size: 18px;
+        font-size: 24px;
         opacity: 1;
+        color: aliceblue;
+    }
+    &__medios{
+        font-family: "Montserrat";
+        font-size: 24px;
+        color:aliceblue;
+ 
+    }
+}
+
+.form{
+    margin: 30px;
+    padding: 30px;
+    background: rgb(77,82,96);
+    background: linear-gradient(342deg, rgba(77,82,96,1) 0%, rgba(127,127,131,1) 12%, rgba(149,144,143,1) 25%, rgba(171,151,147,1) 50%, rgba(221,200,196,1) 76%, rgba(223,223,223,1) 99%);
+    &__label{
+        font-family: "Montserrat";
+        font-size: 18px;
+        color: black;
+        margin: 5px;
+
+        &--titulo{
+            @extend .form__label;
+            font-size: 60px;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            font-family: "Bebas";
+        }
+
+        &--pais{
+            @extend .form__label;
+            margin: 0cm;
+        }
+
+        &--boton{
+            @extend .form__label;
+            background-color: $gray;
+        }
     }
 }

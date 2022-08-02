@@ -45,29 +45,29 @@
   <h1 class="page__title">Contacto</h1>
 </div>
 
-    <section class="row contacto">
+    <section class="row ">
     <div class="col contacto__info">
       <h2 class="contacto__sub">Ayúdanos a ser mejor</h2>
       <p class="contacto__text">¿Tenés preguntas? ¿Sugerencias? No dudes en contactarnos al mail o completando el formulario de la derecha.</p>
       <p class="contacto__text">Estamos a tu disposición</p>
       <div class="contacto__medios">
-        <p>Mail</p>
-        <p>Teléfono</p>
+        <p>Mail: contacto@studyself.com</p>
+        <p>Teléfono: 15 9654 1234</p>
       </div>
     </div>  
 
     <form class="form col">
-      <fieldset class="form__fondo">
-          <Legend class="form__titulo">Formulario de Contacto</Legend>
+      <fieldset>
+          <Legend class="form__label--titulo">Formulario de Contacto</Legend>
 
-          <label class="form__bullet" for="nombre">Nombre y Apellido</label>
+          <label class="form__label" for="nombre">Nombre y Apellido</label>
           <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
           <br>
-          <label for="email" class="form__bullet">Correo Electrónico</label>
+          <label for="email" class="form__label">Correo Electrónico</label>
           <input type="email" name="email" id="email" placeholder="Escribe tu email">
           <br>
           <br>
-          <label class="form__bullet" for="sexo">Sexo</label>
+          <label class="form__label" for="sexo">Sexo</label>
           <select name="sexo">
               <option>Seleccioná tu sexo</option>
               <option value="M">Masculino</option>
@@ -78,33 +78,33 @@
           <br>
 
           <section>
-          <div class="form__bullet">Selecciona tu país de residencia:</div>
-          <label class="form__pais" for="pais">Argentina</label>
+          <div class="form__label">Selecciona tu país de residencia:</div>
+          <label class="form__label--pais" for="pais">Argentina</label>
           <input type="radio" name="pais" value="arg">
           <br>
-          <label class="form__pais" for="pais">Chile</label>
+          <label class="form__label--pais" for="pais">Chile</label>
           <input type="radio" name="pais" value="chi">
           <br>
-          <label class="form__pais" for="pais">Uruguay</label>
+          <label class="form__label--pais" for="pais">Uruguay</label>
           <input type="radio" name="pais" value="uru">
           <br>
-          <label class="form__pais" for="pais">Colombia</label>
+          <label class="form__label--pais" for="pais">Colombia</label>
           <input type="radio" name="pais" value="col">
           <br>
-          <label class="form__pais" for="pais">Otro</label>
+          <label class="form__label--pais" for="pais">Otro</label>
           <input type="radio" name="pais" value="otro">
           <br>
           </section>
 
           <br>
-          <label class="form__bullet">Deseas subscribirte a nuestro newsteller</label>
+          <label class="form__label">Deseas subscribirte a nuestro newsteller</label>
           <input type="checkbox" class="form__checkbox">
           <br>
-          <div for="comentario" class="form__bullet">Comentario</div>
+          <div for="comentario" class="form__label">Comentario</div>
           <textarea class="form__textarea" name="comentario" id="comentario" cols="30" rows="10"></textarea>
           <br>
-      <input type="reset" value="Restablecer"/>
-      <input type="submit" value="Enviar"/>
+          <button type="reset" value="Restablecer" class="btn btn-outline-secondary form__label--boton">Enviar</button>
+          <button type="submit" value="Enviar" class="btn btn-outline-secondary form__label--boton">Restablecer</button>
   </fieldset>
   </form>
 

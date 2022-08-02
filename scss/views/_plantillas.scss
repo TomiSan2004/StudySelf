@@ -1,0 +1,40 @@
+.description{
+    text-align: center;
+    margin: 30px;
+    font-family: "Montserrat";
+    color: $darkgray;
+    font-size: 20px;
+}
+
+$plantillas: ( 
+        organica: url(../../assets/images/papel_organica.jpeg),
+        itinerario: url(../../assets/images/papel-itinerario.jpeg),
+        comida: url(../../assets/images/papel_comidas.jpeg),
+        lista: url(../../assets/images/papel_lista.jpeg)
+); 
+
+@each $nombre, $url in $plantillas {
+   .plantillas__card--#{$nombre} {
+       background-image: $url;
+       background-size: cover;
+   }
+};
+
+
+.plantilla{
+    display: flex;
+    justify-content: space-around;
+
+    &__titulo{
+        font-family: "Bebas";
+        font-size: 30px;
+    }
+    &__boton{
+        margin: 30px;
+        font-size: 20px;
+    }
+    &__box{
+        width: 500px;
+        margin-top: 30px;
+    }
+}
