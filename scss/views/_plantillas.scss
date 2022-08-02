@@ -7,10 +7,10 @@
 }
 
 $plantillas: ( 
-        organica: url(../../assets/images/papel_organica.jpeg),
-        itinerario: url(../../assets/images/papel-itinerario.jpeg),
-        comida: url(../../assets/images/papel_comidas.jpeg),
-        lista: url(../../assets/images/papel_lista.jpeg)
+        organica: url(../assets/images/papel_organica.jpeg),
+        itinerario: url(../assets/images/papel-itinerario.jpeg),
+        comida: url(../assets/images/papel_comidas.jpeg),
+        lista: url(../assets/images/papel_lista.jpeg)
 ); 
 
 @each $nombre, $url in $plantillas {
